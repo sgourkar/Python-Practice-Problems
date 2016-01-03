@@ -1,0 +1,14 @@
+name = input('enter your name here ')
+age = int(input('what is your age?: '))
+import datetime
+year = datetime.datetime.now().year
+age100 = year - age + 100
+print('hi ' + name + ', you will be 100 years old in the year ' + str(age100))
+reps = input('how many times would you like that statement repeated?: ')
+reps = int(reps)
+while (reps > 10):
+    print('really dude? \nthat many times? \n how about something under 10 \nso this doesn''t take forever :) ')
+    reps = int(input('how many repetitions?'))
+    
+for i in range(0,reps):
+    print('hi ' + name + ', you will be 100 years old in the year ' + str(age100))
