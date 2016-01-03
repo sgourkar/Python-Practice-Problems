@@ -1,2 +1,2 @@
 # Python-Practice-Problems
-worked out exercises to python practice problems from various websites
+Worked out exercises from practice problems found on practicepython.org
