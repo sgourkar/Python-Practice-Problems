@@ -1,0 +1,20 @@
+# temperature converter
+print('Temperature converter\n')
+temp = input('Enter a temperature: ')
+temp = int(temp)
+
+temp_format = input('Convert to (F)ahrenheit or (C)elsius? ')
+temp_format = str(temp_format)
+
+if (temp_format.lower() == 'c'):
+    new_temp = (5/9) * (temp - 32)
+    new_temp = int(new_temp)
+    print(str(temp) + ' F = ' + str(new_temp) + ' C\n')
+elif (temp_format.lower() == 'f'):
+    new_temp = (9/5) * temp + 32
+    new_temp = int(new_temp)
+    print(str(temp) + ' C = ' + str(new_temp) + ' F\n')
+else:
+    while (temp_format.lower() != 'c' & temp_format.lower != 'f'):
+        temp_format = input('Please choose (C) or (F)\n')
+
