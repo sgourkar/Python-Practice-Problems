@@ -1,0 +1,14 @@
+hrs = raw_input("Enter Hours:")
+h = float(hrs)
+
+rate = raw_input("Enter Rate:")
+r = float(rate)
+
+if h > 45:
+    overtime = h - 45
+    overtime = overtime * 1.5 * r
+else:
+    overtime = 0
+
+gross_pay = (h * r) + overtime
+print (gross_pay)
