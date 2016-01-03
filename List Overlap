@@ -1,0 +1,35 @@
+# List Overlap
+import random
+
+len1    = input('Enter desired length of random integer list 1: ')
+len1    = int(len1)
+
+len2  = input('Enter desired length of the random integer list 2: ')
+len2 = int(len2)
+
+listmin = input('Enter the minimum value to be found within your lists: ')
+listmin = int(listmin)
+
+listmax = input('Now enter the maximum value to be found within your lists: ')
+listmax = int(listmax)
+
+list1 = random.sample(range(listmin, listmax + 1), len1)
+list2 = random.sample(range(listmin, listmax + 1), len2)
+
+print('Your first list: ' + str(list1))
+print('Your second list: ' + str(list2))
+
+common = []
+
+if len1 >= len2:
+    for i in list2:
+        if i in list1:
+            common.append(i)
+else:
+    for i in list1:
+        if i in list2:
+            common.append(i)
+
+print('Members common to both lists are the following:')
+print(str(common))
+
