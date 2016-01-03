@@ -1,0 +1,16 @@
+'''
+Ask user to enter a integer and return all the divisors of that integer.
+'''
+
+print('Divisors')
+num = input('Enter a number here, and see what it''s divisors are!: ')
+num = int(num)
+
+x = range(1,num + 1)
+divisors = []
+
+for i in x:
+    if num % i == 0:
+        divisors.append(i)
+
+print(divisors)
